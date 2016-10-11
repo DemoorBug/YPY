@@ -18,7 +18,7 @@ var reload = browserSync.reload; // 重启服务
 
 var _html = './src/index.html', //需要处理的html文件
     _scssArr = ['./src/less/*.less'], //需要处理的less数组
-    _imgArr = ['./src/img/*.png'], //需要处理的img数组
+    _imgArr = ['./src/imgXBT/*.png'], //需要处理的img数组
 
     _cssDistDir = 'src/css', //发布的css目录
     _cssMapsDir = 'src/css/map'; // 发布的cssMaps目录
