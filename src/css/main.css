@@ -21,6 +21,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+i,
+em {
+  font-style: normal;
+}
 li {
   list-style: none;
 }
@@ -28,6 +32,9 @@ button,
 input {
   outline: 0px;
   border: 0;
+}
+img {
+  border: none;
 }
 /*==========
  工具样式
@@ -115,7 +122,7 @@ a {
 }
 a:hover,
 a:active {
-  color: #f4e49e;
+  color: #c40000;
   text-decoration: none;
 }
 h3,
@@ -127,7 +134,7 @@ button,
 input,
 select,
 textarea {
-  font: 12px/1.5 tahoma, arial, "\5b8b\4f53";
+  font: 12px/1.5 Arial, Verdana, "\5b8b\4f53";
   -ms-overflow-style: scrollbar;
 }
 /*==============
@@ -291,7 +298,6 @@ textarea {
   font-family: 'list';
   font-size: 20px;
   color: #FFF;
-  font-style: normal;
   font-weight: normal;
 }
 .shopClass .text {
@@ -316,7 +322,7 @@ textarea {
 }
 /* 轮播 */
 .flexslider {
-  margin: 0px auto 20px;
+  margin: 0px auto;
   position: relative;
   width: 100%;
   height: 500px;
@@ -467,7 +473,6 @@ textarea {
 .pannel-con .word-con .line-title em {
   display: block;
   position: absolute;
-  font-style: normal;
   top: 0;
   right: -15px;
 }
@@ -493,6 +498,223 @@ textarea {
 }
 .highlight {
   color: #e54077!important;
+}
+/*  */
+.brand-all {
+  padding: 35px 0;
+  background-color: #de4066;
+}
+.brand-link {
+  margin-left: -1px;
+  margin-top: -1px;
+}
+.brand-link li {
+  float: left;
+  height: 160px;
+  width: 280px;
+  border-left: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  padding: 0 13px;
+}
+.brand-link li img {
+  width: 100%;
+}
+.brand-link.borderNone li {
+  border-top: none;
+}
+.brand-link .brand-sn {
+  width: 561px;
+  background: #FFF;
+  padding: 0 26px;
+}
+/* 阴影 */
+.shadow {
+  background: url(../images/yin.jpg) no-repeat center;
+  width: 100%;
+  height: 50px;
+  background-size: 100%;
+  margin-top: 40px;
+}
+.specia {
+  position: relative;
+  margin-top: 95px;
+  margin-bottom: 125px;
+  height: 3px;
+  background-color: #000;
+}
+.specia .shows {
+  background-color: #FFF;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  margin-left: -102px;
+  top: -39px;
+  font-size: 24px;
+  font-family: 微软雅黑;
+}
+.specia .shows h3 {
+  font-weight: normal;
+  text-shadow: 2px 2px 3px #999;
+}
+.specia .shows p {
+  color: #e01546;
+}
+/*  */
+.goods-show comWidth {
+  position: relative;
+}
+.goods-show .goods-posit {
+  position: absolute;
+  margin-left: -117px;
+}
+.goods-show .goods-top {
+  text-align: right;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.goods-show .goods-list {
+  position: relative;
+  margin-left: 314px;
+  z-index: 99;
+}
+.goods-show .goods-list .marginTop {
+  margin-top: 20px;
+}
+.goods-show .goods-list .goods-com {
+  padding: 20px 0 0 50px;
+  margin-left: -60px;
+  margin-top: -2px;
+}
+.goods-show .goods-list .goods-com li {
+  float: left;
+  margin-left: 60px;
+  font-size: 14px;
+  margin-top: 2px;
+  width: 234px;
+}
+.goods-show .goods-list .goods-com li .goods-abstract {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods-show .goods-list .goods-com li .goods-red {
+  color: red;
+}
+.goods-show .goods-list .goods-com li .goods-through {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 8px;
+}
+.goods-show .goods-list .goods-com li .goods-ln {
+  margin-top: 3px;
+}
+.goods-show .goods-list .goods-com li .goods-buy {
+  position: relative;
+  display: inline-block;
+  margin-top: -5px;
+  padding: 5px 17px;
+  color: #FFF;
+  font-size: 12px;
+  background: #29a89f;
+}
+.goods-show .goods-list .goods-com .com-img {
+  border: 2px solid #DDD;
+}
+.goods-show .goods-list .goods-com .com-img img {
+  width: 230px;
+  height: 200px;
+}
+.goods-show .goods-list .goods-com .com-bot {
+  padding: 0 5px;
+  margin-top: 3px;
+}
+.border-top {
+  border-bottom: 1px #29a89f solid;
+}
+.border-top a:hover {
+  color: #29a89f;
+}
+/*  */
+.goods-two {
+  margin-top: 130px;
+}
+.goods-two .goods-posit {
+  margin-left: -4px;
+}
+.goods-two .goods-list .border-top {
+  border-bottom-color: #ff773d;
+}
+.goods-two .goods-list .border-top a:hover {
+  color: #ff773d;
+}
+.goods-two .goods-list .goods-com li .goods-buy {
+  background: #ff773d;
+}
+/*  */
+.goods-theer .goods-posit {
+  margin-left: -48px;
+}
+.goods-theer .goods-list .border-top {
+  border-bottom-color: #41b5ff;
+}
+.goods-theer .goods-list .border-top a:hover {
+  color: #41b5ff;
+}
+.goods-theer .goods-list .goods-com li .goods-buy {
+  background: #41b5ff;
+}
+/*  */
+.gift {
+  margin-top: 140px;
+  margin-bottom: 150px;
+}
+.gift-list .cent {
+  border: solid #DDD 3px;
+}
+.gift-list .cent img {
+  width: 100%;
+}
+.gift-list .wn {
+  width: 450px;
+  padding: 10px 20px 0;
+}
+.gift-list .cent-a {
+  position: relative;
+  border-bottom: 1px solid #DDD;
+}
+.gift-list .cent-a i,
+.gift-list .cent-a em {
+  position: absolute;
+}
+.gift-list .cent-a i {
+  top: 0 ;
+  left: 0;
+  font-size: 18px;
+}
+.gift-list .cent-a em {
+  bottom: 0;
+  left: 0;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+.gift-list .cent-o {
+  line-height: 60px;
+  font-size: 18px;
+  color: red;
+}
+.gift-list .cent-o a {
+  display: inline-block;
+  line-height: 20px;
+  background: red;
+  margin-top: 15px;
+  padding: 5px 15px;
+  color: #FFF;
+  font-size: 14px;
+}
+/*  */
+.cent-header .ws {
+  width: 310px;
+  padding: 10px 20px 0;
 }
 
 /*# sourceMappingURL=./map/main.css.map */
