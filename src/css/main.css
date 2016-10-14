@@ -518,6 +518,7 @@ textarea {
 }
 .brand-link li img {
   width: 100%;
+  height: 100%;
 }
 .brand-link.borderNone li {
   border-top: none;
@@ -531,7 +532,7 @@ textarea {
 .shadow {
   background: url(../images/yin.jpg) no-repeat center;
   width: 100%;
-  height: 50px;
+  height: 116px;
   background-size: 100%;
   margin-top: 40px;
 }
@@ -619,10 +620,19 @@ textarea {
 }
 .goods-show .goods-list .goods-com .com-img {
   border: 2px solid #DDD;
+  height: 210px;
+  background-color: #eaeaea;
+}
+.goods-show .goods-list .goods-com .com-img:hover img {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .goods-show .goods-list .goods-com .com-img img {
   width: 230px;
-  height: 200px;
+  height: 100%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .goods-show .goods-list .goods-com .com-bot {
   padding: 0 5px;
@@ -671,12 +681,23 @@ textarea {
 .gift-list .cent {
   border: solid #DDD 3px;
 }
+.gift-list .cent:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 .gift-list .cent img {
   width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 .gift-list .wn {
   width: 450px;
   padding: 10px 20px 0;
+}
+.gift-list .wn .cent-a {
+  height: 489px;
 }
 .gift-list .cent-a {
   position: relative;
@@ -715,6 +736,175 @@ textarea {
 .cent-header .ws {
   width: 310px;
   padding: 10px 20px 0;
+}
+.cent-header .ws .cent-a {
+  height: 206px;
+}
+.marginRight {
+  margin-right: 10px;
+}
+.cent-bottom .ts {
+  margin-top: 10px;
+  width: 620px;
+  padding: 10px 48px 0;
+}
+.cent-bottom .ts .cent-a {
+  height: 196px;
+}
+.gift-two {
+  margin-top: 45px;
+}
+.gift-button {
+  font-size: 0;
+  text-align: center;
+}
+.gift-button li {
+  display: inline-block;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  -webkit-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid red;
+  border-right: none;
+  background-color: #FFF;
+  line-height: 40px;
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+.gift-button li:hover {
+  background-color: red;
+  color: #FFF;
+}
+.gift-button .gift-next {
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid red;
+  border-left: none;
+}
+.gift-button .reter {
+  background-color: red;
+  color: #FFF;
+}
+.shadow-s {
+  background: url(../images/yin1.jpg) no-repeat center;
+  width: 100%;
+  height: 100px;
+  background-size: 100%;
+  margin-top: 40px;
+}
+/* footer */
+.footer {
+  margin-top: 40px;
+}
+.footer-top {
+  border: 2px solid #d4d4d4;
+  background-color: #fafafa;
+  color: #6d6b6c;
+}
+.footer-top a {
+  color: #6d6b6c;
+}
+.footer-pdd {
+  border-bottom: 1px solid #dedede;
+}
+.footer-service {
+  padding: 20px 10px;
+  margin-left: -50px;
+}
+.footer-service li {
+  float: left;
+  font-size: 20px;
+  font-family: "微软雅黑";
+  margin-left: 110px;
+  position: relative;
+}
+.footer-service li i {
+  display: block ;
+  font-family: "list";
+  position: absolute;
+  font-size: 35px;
+  margin-left: -45px;
+  top: 50%;
+  margin-top: -26px;
+  color: #e62d4d;
+}
+.ypy-row .col-3 {
+  float: left;
+  width: 180px;
+  text-align: center;
+  margin: 20px 0 20px -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 10px;
+  border-left: 1px solid #dedede;
+}
+.ypy-row .col-3 p {
+  font-size: 20px;
+  font-family: "微软雅黑";
+}
+.ypy-row .col-3 a {
+  font-size: 16px;
+  font-family: "微软雅黑";
+}
+.ypy-row .col-er {
+  padding: 0 25px;
+  margin-bottom: 0;
+}
+.footer-bot {
+  width: 100%;
+  background-color: #dcdcdc;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "微软雅黑";
+  -webkit-box-shadow: 5px 1px 2px #999;
+  box-shadow: 5px 1px 2px #999;
+}
+/* 右侧 */
+.ypy-bar {
+  position: fixed;
+  _position: absolute;
+  width: 0;
+  overflow: visible;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  background: transparent;
+}
+.ypy-bar .ypy-outer {
+  visibility: visible;
+  /* 测试 */
+  position: fixed;
+  _position: absolute;
+  width: 270px;
+  top: 0;
+  right: -270px;
+  z-index: 999999;
+  color: #fff;
+  font-family: "Microsoft Yahei", "\5fae\8f6f\96c5\9ed1", "\5b8b\4f53";
+  _overflow-y: hidden;
+}
+.ypy-bar .ypy-tabs {
+  position: absolute;
+  z-index: 999999;
+  top: 0;
+  left: 0px;
+  width: 35px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.ypy-bar .ypy-tabs .ypy-tabs-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  background-color: #000;
 }
 
 /*# sourceMappingURL=./map/main.css.map */
