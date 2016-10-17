@@ -866,10 +866,29 @@
   <!-- 右侧 -->
   <div id="Muypybar" class="ypy-bar">
     <div class="ypy-outer" id="ypy-outer">
-      <div class="ypy-plugins" id="ypy-plugins"></div>
+      <div class="ypy-plugins" id="ypy-plugins">
+
+      </div>
       <div class="ypy-tabs" id="ypy-tabs">
         <div class="ypy-tabs-mask" id="ypy-tabs-mask">
-
+          <div class="ypy-position">
+            <div class="ypy-mbar-tab ypy-mbar-tab-prof" style="top: 0px;">
+              <div class="ypy-logo"><img class="ypy-logo-img" src="images/user.png"></div>
+              <div class="ypy-mbar-tab-tip">我的特权<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div></div>
+            </div>
+            <div class="ypy-mbar-tab ypy-mbar-tab-prof" style="top: 0px; margin: 15px 0">
+              <div class="ypy-logo"><img class="ypy-logo-img" src="images/ShoppingCart.png"></div>
+              <div class="ypy-mbar-tab-tip">购物车<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div></div>
+            </div>
+            <div class="ypy-mbar-tab ypy-mbar-tab-prof" style="top: 0px; margin: 15px 0">
+              <div class="ypy-logo"><img class="ypy-logo-img" src="images/money.png"></div>
+              <div class="ypy-mbar-tab-tip">我的资产<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div></div>
+            </div>
+            <div class="ypy-mbar-tab ypy-mbar-tab-prof" style="top: 0px; margin: 15px 0">
+              <div class="ypy-logo"><img class="ypy-logo-img" src="images/star.png"></div>
+              <div class="ypy-mbar-tab-tip">我的收藏<div class="mui-mbar-arr mui-mbar-tab-tip-arr">◆</div></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -894,6 +913,17 @@
         $('#banner_tabs .flex-next').click(function() {
             bannerSlider.next()
         });
+        /**/
+        $('.ypy-mbar-tab-prof').on('mouseenter',function(){
+          $(this).children('.ypy-mbar-tab-tip').stop(true,false).fadeIn(0).animate({opacity: 1,right: 35},300)
+        })
+        $('.ypy-mbar-tab-prof').on('mouseleave',function(){
+          $(this).children('.ypy-mbar-tab-tip').stop(true,false).animate({opacity: 0,right: 70},300).fadeOut(0)
+        })
+        /**/
+        $('.ypy-position').delegate('.ypy-mbar-tab','click',function(){
+            $('#ypy-outer').animate({right:0},300)
+        })
     })
     </script>
 </body>
