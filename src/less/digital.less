@@ -1,0 +1,123 @@
+.Accordion {
+  margin-top: 20px;
+}
+.Accordion-first {
+  h3 {
+    font-size: 28px;
+    z-index: 9;
+    position:relative;
+  }
+  p {
+    font-size: 16px;
+    z-index: 9;
+    font-family: "微软雅黑";
+    position:relative;
+    line-height: 30px;
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: right .3s;
+  }
+  li {
+    float: left;
+    background: #148ce2;
+    color: #FFF;
+    a {
+      width: 267px;
+      height: 140px;
+      padding: 30px 20px 60px;
+      position: relative;
+      display: inline-block;
+      color: #FFF;
+      &:hover {
+        color: #FFF;
+      }
+      &:hover img {
+        right: 5px;
+      }
+    }
+    i {
+      position: relative;
+      z-index: 9;
+      display: inline-block;
+      color: #44cee9;
+      font-size: 18px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 20px;
+      background-color: #FFF;
+      font-family: "微软雅黑";
+      margin-top: 15px;
+    }
+  }
+}
+/*  */
+.Shopping {
+  margin-top: 20px;
+  .Shopping-upper {
+    h3 {
+      font-size: 24px;
+      font-family: "黑体";
+      height: 35px;
+      line-height: 35px;
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .shopImg {
+    width: 263px;
+    height: 540px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .lower-send {
+    height: 35px;
+    line-height: 35px;
+  }
+  .lower-sync {
+    border-top: 1px solid #2ebbd6;
+  }
+  .sync-mod {
+    margin-left: -1px;
+    width: 968px;
+    li {
+      border-left: 1px solid #eaeaea;
+      border-bottom: 1px solid #eaeaea;
+      padding: 0 0 26px 0;
+      float: left;
+      width: 241px;
+      a {
+        &:hover img{
+          transition: opacity 0.2s;
+          opacity: 0.8;
+        }
+      }
+    }
+    .sync-s {
+      width: 100%;
+      height: 200px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: opacity 0.2s;
+      }
+    }
+    .sync-t {
+      padding: 0 20px;
+      p {
+        font-size: 14px;
+        font-family: "黑体";
+      }
+      .sync-red {
+        font-family: "微软雅黑";
+        color: #c40000;
+      }
+    }
+  }
+}
