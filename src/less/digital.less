@@ -1,3 +1,4 @@
+@charset "utf-8";
 .Accordion {
   margin-top: 20px;
 }
@@ -79,11 +80,34 @@
   .lower-send {
     height: 35px;
     line-height: 35px;
+    ul {
+      margin-left: -40px;
+    }
+    li {
+      font-size: 14px;
+      float: left;
+      margin-left: 40px;
+      border-radius: 2px 2px 0 0 ;
+      span {
+        cursor: pointer;
+        color: #000;
+        display: block;
+        padding: 0 30px;
+        font-family: "微软雅黑";
+      }
+      &.repea {
+        span {
+          color: #FFF;
+        }
+        background-color: #2ebbd6;
+      }
+    }
   }
   .lower-sync {
     border-top: 1px solid #2ebbd6;
   }
   .sync-mod {
+    display: none;
     margin-left: -1px;
     width: 968px;
     li {

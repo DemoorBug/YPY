@@ -1,3 +1,4 @@
+@charset "utf-8";
 .Accordion {
   margin-top: 20px;
 }
@@ -78,10 +79,34 @@
   height: 35px;
   line-height: 35px;
 }
+.Shopping .lower-send ul {
+  margin-left: -40px;
+}
+.Shopping .lower-send li {
+  font-size: 14px;
+  float: left;
+  margin-left: 40px;
+  -webkit-border-radius: 2px 2px 0 0 ;
+  border-radius: 2px 2px 0 0 ;
+}
+.Shopping .lower-send li span {
+  cursor: pointer;
+  color: #000;
+  display: block;
+  padding: 0 30px;
+  font-family: "微软雅黑";
+}
+.Shopping .lower-send li.repea {
+  background-color: #2ebbd6;
+}
+.Shopping .lower-send li.repea span {
+  color: #FFF;
+}
 .Shopping .lower-sync {
   border-top: 1px solid #2ebbd6;
 }
 .Shopping .sync-mod {
+  display: none;
   margin-left: -1px;
   width: 968px;
 }
