@@ -290,8 +290,9 @@ textarea {
   background: #e60012;
 }
 .shopClass i {
-  margin-left: -20px;
+  margin-left: 45px;
   position: absolute;
+  left: 0;
   top: 50%;
   margin-top: -16px;
   display: inline-block;
