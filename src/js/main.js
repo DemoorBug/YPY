@@ -1,7 +1,9 @@
 $(function(){
+  var windowHeight= $(window).height()
   resize()
   $('#ypy-outer').animate({right: -235},300)
   $(window).on('resize',function(){
+    windowHeight = $(window).height()
     resize()
   })
     /*右侧*/
@@ -78,7 +80,7 @@ $(function(){
       $('.mui-mbar-plugin').eq(index).css({'z-index':'999996','top':'0'}).addClass('mui-mbar-plugin-scaleDown');
     }
     index = $(this).index();
-    $('.mui-mbar-plugin').eq(index).css({'z-index':'999999','visibility':'visible','top':$(window).height()}).removeClass('mui-mbar-plugin-scaleDown').animate({top:0});
+    $('.mui-mbar-plugin').eq(index).css({'z-index':'999999','visibility':'visible','top':windowHeight}).removeClass('mui-mbar-plugin-scaleDown').animate({top:0});
     prevTrigger = $(this).addClass('current');
   },
   quickHandlers = {
@@ -97,10 +99,8 @@ $(function(){
     }
   })
 
-})
 function resize(){
-  var windowHeight = $(window).height()          //浏览器时下窗口可视区域高度
-  , muYpyBar = $('#Muypybar')          //总DIV
+  var  muYpyBar = $('#Muypybar')          //总DIV
   , ypyOuter = $('#ypy-outer')
   , ypyTabs = $('#ypy-tabs')
   , ypyPlugins = $('#ypy-plugins')
@@ -112,7 +112,7 @@ function resize(){
   ypyTabsMask.css('height',windowHeight+ 'px')
   ypyPlugins.css('height',windowHeight+ 'px')
   muiMbarPlugin.css('height',windowHeight+ 'px')
-
 }
+})
 
 

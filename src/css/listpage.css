@@ -272,8 +272,91 @@
   margin-bottom: 20px;
 }
 .subject .subject-right {
+  width: 995px;
   float: left;
   margin-left: 20px;
+}
+.subject .subject-right .subject-right-box {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+.subject .subject-right .subject-right-box li {
+  float: left;
+  width: 225px;
+  border: 1px solid #ddd;
+  padding-bottom: 40px;
+  position: relative;
+  -webkit-transition: background .3s,border .3s;
+  transition: background .3s,border .3s;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.subject .subject-right .subject-right-box li:hover {
+  background-color: #ffe7be;
+  border-color: #f40;
+}
+.subject .subject-right .subject-right-box li .deal-img {
+  width: 225px;
+  height: 180px;
+}
+.subject .subject-right .subject-right-box li .deal-img img {
+  width: 100%;
+  height: 100%;
+}
+.subject .subject-right .subject-right-box li .deal-cent {
+  font-size: 12px;
+  padding: 10px 10px 0;
+}
+.subject .subject-right .subject-right-box li .deal-cent a {
+  font-size: 12px;
+}
+.subject .subject-right .subject-right-box li .deal-cent a:hover {
+  text-decoration: underline;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-text {
+  color: #F40;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: verdana,arial;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-i {
+  margin-top: 10px;
+  height: 21px;
+  overflow: hidden;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-cnt {
+  height: 42px;
+  overflow: hidden;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-two {
+  margin-top: 5px;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-two .deal-two-t a:hover i {
+  color: #c40000;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-two .deal-two-t i {
+  color: #148ce2;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-two .deal-two-s a {
+  color: #148ce2;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-title-t a {
+  display: inline-block;
+  padding: 2px 5px;
+  background: #e60012;
+  color: #FFF;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-title-s {
+  margin-top: 2px;
+  cursor: pointer;
+}
+.subject .subject-right .subject-right-box li .deal-cent .deal-title {
+  display: none;
+  margin-top: 5px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 205px;
 }
 
 /*# sourceMappingURL=./map/listpage.css.map */
