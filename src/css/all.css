@@ -17,6 +17,9 @@ html {
   /* 此属性为 选中设置 */
   text-shadow: none;
 }
+dd {
+  margin: 0;
+}
 ul {
   margin: 0;
   padding: 0;
