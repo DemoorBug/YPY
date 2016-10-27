@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/Shopping.css">
     <link type="text/css" rel="stylesheet" href="css/css.css" />
+        <style type="text/css">
+
+    </style>
 </head>
 <body>
 <!-- 顶部 -->
@@ -492,6 +495,54 @@
               </div>
             </div>
           </div>
+          <div class="pull-right">
+            <div class="picScroll-top">
+              <div class="picSone">
+                <s></s>
+                <span>推荐商品</span>
+              </div>
+              <div class="bd">
+                <ul class="picList">
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥521</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥9945</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥521</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥521</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥521</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                  <li>
+                    <div class="pic"><a href="" target="_blank"><img src="images/sc/sc_19_03_08_03.jpg" /></a></div>
+                    <div class="title">￥521</div>
+                    <div class="bonsc"><a href="" target="_blank">长虹(CHANGHONG)55G32寸长虹(CHANGHONG)55G32寸</a></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="hd">
+                <a class="prev"></a>
+                <ul></ul>
+                <a class="next"></a>
+                <!-- <span class="pageState"></span> -->
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="clearfix tcxq-mic">
@@ -721,25 +772,38 @@
     </div>
   </div>
   <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script src="js/slider.js"></script>
+  <!-- <script src="js/slider.js"></script> -->
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+  <!-- build:js js/location.js -->
   <script src="js/location.js"></script>
+  <!-- endbuild -->
 <script type="text/javascript">
-    //轮播
 $(document).ready(function(){
-  $('#wm-sj li').click(function(){
-    $(this).siblings().removeClass('wm-selected')
-    $(this).toggleClass('wm-selected')
+  /*垂直轮播*/
+  jQuery(".picScroll-top").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"top",scroll:2,vis:2});
+  /*递增*/
+  $('.wm-amounts-increase').parent().click(function(){
+    $(this).parent().prev().val( parseInt( $(this).parent().prev().val() )+ 1 )
   })
-})
-$(document).ready(function(){
+  $('.wm-amount-increase').parent().click(function(){
+    if( parseInt( $(this).parent().prev().val() ) <= 1) return;
+    $(this).parent().prev().val( parseInt( $(this).parent().prev().val() ) - 1 )
+  })
+  /*选项卡*/
   $('.njl_Two-xxk li').click(function(){
     $(this).siblings().removeClass('wm-xc');
     $(this).addClass('wm-xc');
     $('.dom').css('display','none')
     $('.dom').eq($(this).index()).css('display','block');
   })
+  /*选中*/
+  $('#wm-sj li').click(function(){
+    $(this).siblings().removeClass('wm-selected')
+    $(this).toggleClass('wm-selected')
+  })
 })
+
     </script>
 </body>
 </html>

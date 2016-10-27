@@ -75,7 +75,7 @@ gulp.task('default',function() {
     var cssFilter = filter('**/*.css', {restore: true});
     var indexHtmlFilter = filter(['**/*','!**/*.html'], {restore: true});
 
-    return gulp.src('src/*.html')
+    return gulp.src('src/index.html')
         .pipe(useref())
         .pipe(jsFilter)
         .pipe(uglify())
