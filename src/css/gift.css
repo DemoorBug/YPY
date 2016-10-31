@@ -1,0 +1,102 @@
+.giftF {
+  margin-top: 20px;
+  /* you */
+}
+.giftF .gift-left {
+  float: left;
+}
+.giftF .gift-left .giftLeft-then {
+  width: 250px;
+  padding: 5px;
+  background-color: #7ecef4;
+  text-align: center;
+  font-size: 14px;
+  color: #222;
+}
+.giftF .gift-left .giftLeft-then .giftform {
+  background-color: #FFF;
+  padding: 5px 0;
+}
+.giftF .gift-left .giftLeft-then .giftform .giftform-img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.giftF .gift-left .giftLeft-then .giftform .giftform-img img {
+  width: 100%;
+}
+.giftF .gift-left .giftLeft-then .gifttext {
+  margin: 5px 0;
+  padding: 10px 0;
+  background-color: #FFF;
+}
+.giftF .gift-left .giftLeft-then .giftimg {
+  width: 100%;
+}
+.giftF .gift-left .giftLeft-then .giftimg img {
+  width: 100%;
+}
+.giftF .gift-right {
+  float: left;
+  margin-left: 20px;
+  width: 950px;
+}
+.giftF .gift-right .giftArea {
+  font-size: 14px;
+  font-weight: 400;
+  border-bottom: 1px solid #eee;
+  line-height: 30px;
+}
+.giftF .gift-right .giftcome {
+  margin-top: 10px;
+}
+.giftF .gift-right .giftcome ul {
+  margin-left: -20px;
+}
+.giftF .gift-right .giftcome li {
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #eee;
+  padding-bottom: 10px;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+}
+.giftF .gift-right .giftcome li .giftCome-img {
+  width: 220px;
+  height: 160px;
+}
+.giftF .gift-right .giftcome li .giftCome-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.giftF .gift-right .giftcome li .giftCome-img:hover img {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  opacity: 0.8;
+}
+.giftF .gift-right .giftcome li .giftCome-text {
+  border-bottom: 1px dotted #eee;
+  line-height: 35px;
+}
+.giftF .gift-right .giftcome li .giftCome-integral {
+  padding: 0 30px;
+}
+.giftF .gift-right .giftcome li .giftCome-integral p {
+  color: #408db2;
+  line-height: 35px;
+}
+.giftF .gift-right .giftcome li .giftCome-integral a {
+  display: block;
+  padding: 8px 0;
+  color: #FFF;
+  background-color: #7ecef4;
+}
+
+/*# sourceMappingURL=./map/gift.css.map */

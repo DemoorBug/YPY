@@ -178,6 +178,9 @@
   margin-top: 140px;
   margin-bottom: 150px;
 }
+.gift-list {
+  display: none;
+}
 .gift-list .cent {
   border: solid #DDD 3px;
 }
@@ -286,6 +289,9 @@
 .gift-button .reter {
   background-color: red;
   color: #FFF;
+}
+.nowRight {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=./map/main.css.map */

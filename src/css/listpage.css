@@ -160,7 +160,6 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 .location .sections a:hover {
-  color: red;
   text-decoration: underline;
 }
 .location-hover .sections {
@@ -251,7 +250,6 @@
   padding: 5px 0;
 }
 .subject .subject-left .ctx-box .ctx-box-ys .itemlist a:hover {
-  color: red;
   text-decoration: underline;
 }
 .subject .subject-left .ctx-box .ctx-box-ys .puls .pull-left {

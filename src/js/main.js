@@ -13,6 +13,8 @@ $(function(){
   $('.ypy-mbar-tab-prof').on('mouseleave',function(){
     $(this).children('.ypy-mbar-tab-tip').stop(true,false).animate({opacity: 0,right: 70},300).fadeOut(0)
   })
+  /*index*/
+
   //showQuickPop
   var
   quickShell = $('#Muypybar'),
@@ -116,3 +118,20 @@ function resize(){
 })
 
 
+function navBar() {
+  var shopLi = $('.shopClass_item').find('li')
+  var pannelCon = $('.pannel-con')
+  shopLi.mouseover(function(){
+    var index = $(this).index();
+    shopLi.removeClass('shopHover').eq(index).addClass('shopHover')
+    pannelCon.hide().eq( index ).show();
+  })
+  $('.shopClass').mouseleave(function(){
+    pannelCon.hide()
+    shopLi.removeClass('shopHover')
+    $('.shopClass_show').hide()
+  })
+  $('.nowRight').mouseover(function(){
+    $('.shopClass_show').show()
+  })
+}
