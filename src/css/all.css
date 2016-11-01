@@ -284,14 +284,6 @@ textarea {
   text-align: center;
   background-color: #e60012;
 }
-.shopClass s {
-  width: 100%;
-  height: 1px;
-  position: absolute;
-  top: -1px;
-  left: 0;
-  background: #e60012;
-}
 .shopClass i {
   margin-left: 45px;
   position: absolute;
@@ -363,7 +355,7 @@ textarea {
   *display: inline;
 }
 .flex-control-paging li a {
-  background: url(../images/dot.png) no-repeat 0 -16px;
+  background: url(../images/gagacent.png) no-repeat -15px -126px;
   display: block;
   height: 16px;
   overflow: hidden;
@@ -373,7 +365,7 @@ textarea {
 }
 .flex-control-paging li a.flex-active,
 .flex-control-paging li.active a {
-  background-position: 0 0;
+  background-position: -15px -110px;
 }
 .flexslider .slides a img {
   width: 100%;
@@ -788,6 +780,10 @@ textarea {
   clear: both;
   text-align: right;
   font-size: 0;
+  position: relative;
+}
+.page-ri .page-margin {
+  margin-left: 30px;
 }
 .page-ri input {
   width: 25px;
@@ -796,8 +792,9 @@ textarea {
   margin: 0;
   border: 1px solid #e5e5e5;
   line-height: 30px;
-  position: relative;
-  top: -1px;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
 }
 .page-ri button {
   background: none;
@@ -811,6 +808,7 @@ textarea {
 .page-ri button:hover {
   background-color: #ff0000;
   color: #FFF;
+  border-color: #FF0000;
 }
 .pages {
   text-align: right;
@@ -843,6 +841,7 @@ textarea {
   background-color: #ff0000;
   color: #FFF;
   text-decoration: none;
+  border-color: #FF0000;
 }
 
 /*# sourceMappingURL=./map/all.css.map */

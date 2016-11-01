@@ -183,7 +183,7 @@
   line-height: 27px;
 }
 .filter-box a:hover .icon-btn-check-big {
-  background-position: 0 -23px;
+  background-position: 0 -133px;
 }
 .filter-box .filter {
   float: left;
@@ -196,7 +196,7 @@
   white-space: nowrap;
 }
 .filter-box .filter.filter-hover .icon-btn-check-big {
-  background-position: 0 -23px;
+  background-position: 0 -133px;
 }
 .filter-box .icons {
   float: left;
@@ -210,7 +210,7 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background: url(../images/bg.png) no-repeat 0 0;
+  background: url(../images/gagacent.png) no-repeat 0 -110px;
 }
 /*  */
 .subject-left-table {

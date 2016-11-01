@@ -82,17 +82,17 @@
   margin-bottom: 5px;
 }
 .wm-amount-btn span {
-  background: url('../images/rel2.jpg') no-repeat;
+  background: url('../images/gagacent.png') no-repeat;
   width: 8px;
   height: 5px;
   overflow: hidden;
   display: block;
 }
 .wm-amount-btn span.wm-amounts-increase {
-  background-position: 0 0;
+  background-position: -35px -104px;
 }
 .wm-amount-btn span.wm-amount-increase {
-  background-position: 0 -5px;
+  background-position: -35px -108px;
 }
 /*---------tcxq结束-------*/
 /*------------wmtc开始----------*/
@@ -445,8 +445,7 @@
   overflow: hidden;
   text-indent: -99em;
   display: block;
-  background-repeat: no-repeat;
-  background-image: url(../images/dui.png);
+  background: url(../images/gagacent.png) no-repeat -35px -52px;
 }
 .wm-prop dd {
   width: 420px;
@@ -881,7 +880,7 @@
   overflow: hidden;
   width: 17px;
   height: 24px;
-  background: url(../images/btn20121210.png) 0 0 no-repeat;
+  background: url(../images/gagacent.png) -35px -26px no-repeat;
 }
 #store-selector .close {
   display: none;
@@ -892,7 +891,7 @@
   cursor: pointer;
   width: 17px;
   height: 17px;
-  background: url(../images/toum_03.png) no-repeat -1px -2px;
+  background: url(../images/gagacent.png) no-repeat -36px -132px;
 }
 #store-selector a:hover {
   background: #c4000f;
@@ -901,14 +900,6 @@
 }
 #store-selector.hover .text {
   border-bottom: 0;
-}
-#store-selector.hover .i-storeinfo {
-  position: relative;
-  z-index: 2;
-  background: url(../images/bg_store.gif) no-repeat right -50px;
-}
-#store-selector.hover .i-storeinfo div {
-  background: url(../images/bg_store.gif) no-repeat -81px -75px;
 }
 #store-selector.hover dl {
   display: block;
@@ -1014,7 +1005,7 @@
   width: 7px;
   height: 5px;
   overflow: hidden;
-  background: url(../images/20130606B.png) no-repeat -76px -34px;
+  background: url(../images/gagacent.png) no-repeat -35px -6px;
   opacity: .5;
   filter: alpha(opacity=50);
 }
@@ -1077,7 +1068,7 @@
   margin-left: -55px;
   overflow: hidden;
   cursor: pointer;
-  background: url("../images/sc/T1Z0VbFEdcXXbcIIcR-80-112_02.png") 0 0 no-repeat;
+  background: url("../images/gagacent.png") 0 0 no-repeat;
 }
 .picScroll-top .hd .next {
   background-position: 0 -30px;
@@ -1103,10 +1094,10 @@
   margin-right: 5px;
   text-indent: -999px;
   cursor: pointer;
-  background: url("../images/icoCircle.jpg") 0 -9px no-repeat;
+  background: url("../images/gagacent.png") -35px -88px no-repeat;
 }
 .picScroll-top .hd ul li.on {
-  background-position: 0 1px;
+  background-position: -35px -78px;
 }
 .picScroll-top .bd {
   padding: 10px;

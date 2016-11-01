@@ -277,14 +277,6 @@ _right: -1px;
   position: relative;
   text-align: center;
   background-color: #e60012;
-  s {
-    width:100%;
-    height: 1px;
-    position: absolute;
-    top: -1px;
-    left: 0;
-    background: #e60012;
-  }
   i {
     margin-left: 45px;
     position: absolute;
@@ -370,7 +362,7 @@ _right: -1px;
 }
 
 .flex-control-paging li a {
-    background: url(../images/dot.png) no-repeat 0 -16px;
+    background: url(../images/gagacent.png) no-repeat -15px -126px;
     display: block;
     height: 16px;
     overflow: hidden;
@@ -381,7 +373,7 @@ _right: -1px;
 
 .flex-control-paging li a.flex-active,
 .flex-control-paging li.active a {
-    background-position: 0 0;
+    background-position: -15px -110px;
 }
 
 .flexslider .slides a img {
@@ -797,6 +789,10 @@ _right: -1px;
   clear: both;
   text-align: right;
   font-size: 0;
+  position: relative;
+  .page-margin {
+    margin-left: 30px;
+  }
   input {
     width:25px;
     height: 29px;
@@ -804,8 +800,9 @@ _right: -1px;
     margin: 0;
     border: 1px solid #e5e5e5;
     line-height: 30px;
-    position: relative;
-    top: -1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
 }
   button {
     background: none;
@@ -818,12 +815,13 @@ _right: -1px;
     &:hover {
       background-color: #ff0000;
       color: #FFF;
+      border-color: #FF0000;
     }
   }
 }
 .pages {
   text-align: right;
-      span {
+  span {
     display: inline-block;
     padding: 0 5px;
     min-width: 20px;
@@ -832,8 +830,8 @@ _right: -1px;
     font-size: 14px;
     color: #c8cdd2;
     text-align: center;
-}
-      a {
+  }
+  a {
     border: 1px solid #e5e5e5;
     display: inline-block;
     margin: 0 5px;
@@ -847,10 +845,11 @@ _right: -1px;
     -webkit-transition: border-color 0.2s;
     -moz-transition: border-color 0.2s;
     transition: border-color 0.2s;
-}
-   a:hover {
+  }
+  a:hover {
     background-color: #ff0000;
     color: #FFF;
     text-decoration: none;
-}
+    border-color: #FF0000;
+  }
 }
