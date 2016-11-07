@@ -1,0 +1,103 @@
+html {
+  background-color: #eeeeee;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  background-color: none;
+}
+a:hover,
+a:active {
+  color: #c40000;
+  background-color: #FFF;
+  text-decoration: none;
+}
+::-moz-selection {
+  background-color: #FFF;
+  /* 此属性为 选中设置 */
+  text-shadow: none;
+}
+::selection {
+  background-color: #FFF;
+  /* 此属性为 选中设置 */
+  text-shadow: none;
+}
+.swiper-container {
+  width: 10rem;
+  height: 3.125rem;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+.comWidth {
+  width: 10rem;
+  margin: 0 auto;
+}
+.vertical-view {
+  width: 10rem;
+  height: 4.594rem;
+  background-color: #ffffff;
+}
+.horizontal-view {
+  margin-left: 0.359rem;
+  width: 9.641rem;
+  height: 2.125rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.vertical-li {
+  text-align: center;
+  margin-left: 0.047rem;
+  width: 2.265rem;
+  height: 2.251rem;
+  position: relative;
+}
+.vertical-li .icon-shumajiadian {
+  background-color: #4caf50;
+  line-height: 1.20rem;
+}
+.vertical-li .icon-meizhuang {
+  background-color: #ff7549;
+  line-height: 1.35rem;
+}
+.vertical-li .icon-dtshangyi {
+  background-color: #2cb8f8;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font: 12px/1.5 Arial, Verdana, "\5b8b\4f53";
+  -ms-overflow-style: scrollbar;
+}
+.iconfont {
+  width: 1.25rem;
+  height: 1.25rem;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #FFC107;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+  color: #fff;
+  margin: 0.313rem auto 0;
+}
+.vertical-text {
+  line-height: 0.688rem;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+  width: 2.265rem;
+  height: 0.688rem;
+}
+
+/*# sourceMappingURL=./map/index.css.map */
