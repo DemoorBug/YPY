@@ -6,7 +6,7 @@
     <script>
         !function(N,M){function L(){var a=I.getBoundingClientRect().width;a/F>540&&(a=540*F);var d=a/10;I.style.fontSize=d+"px",D.rem=N.rem=d}var K,J=N.document,I=J.documentElement,H=J.querySelector('meta[name="viewport"]'),G=J.querySelector('meta[name="flexible"]'),F=0,E=0,D=M.flexible||(M.flexible={});if(H){console.warn("将根据已有的meta标签来设置缩放比例");var C=H.getAttribute("content").match(/initial\-scale=([\d\.]+)/);C&&(E=parseFloat(C[1]),F=parseInt(1/E))}else{if(G){var B=G.getAttribute("content");if(B){var A=B.match(/initial\-dpr=([\d\.]+)/),z=B.match(/maximum\-dpr=([\d\.]+)/);A&&(F=parseFloat(A[1]),E=parseFloat((1/F).toFixed(2))),z&&(F=parseFloat(z[1]),E=parseFloat((1/F).toFixed(2)))}}}if(!F&&!E){var y=N.navigator.userAgent,x=(!!y.match(/android/gi),!!y.match(/iphone/gi)),w=x&&!!y.match(/OS 9_3/),v=N.devicePixelRatio;F=x&&!w?v>=3&&(!F||F>=3)?3:v>=2&&(!F||F>=2)?2:1:1,E=1/F}if(I.setAttribute("data-dpr",F),!H){if(H=J.createElement("meta"),H.setAttribute("name","viewport"),H.setAttribute("content","initial-scale="+E+", maximum-scale="+E+", minimum-scale="+E+", user-scalable=no"),I.firstElementChild){I.firstElementChild.appendChild(H)}else{var u=J.createElement("div");u.appendChild(H),J.write(u.innerHTML)}}N.addEventListener("resize",function(){clearTimeout(K),K=setTimeout(L,300)},!1),N.addEventListener("pageshow",function(b){b.persisted&&(clearTimeout(K),K=setTimeout(L,300))},!1),"complete"===J.readyState?J.body.style.fontSize=12*F+"px":J.addEventListener("DOMContentLoaded",function(){J.body.style.fontSize=12*F+"px"},!1),L(),D.dpr=N.dpr=F,D.refreshRem=L,D.rem2px=function(d){var c=parseFloat(d)*this.rem;return"string"==typeof d&&d.match(/rem$/)&&(c+="px"),c},D.px2rem=function(d){var c=parseFloat(d)/this.rem;return"string"==typeof d&&d.match(/px$/)&&(c+="rem"),c}}(window,window.lib||(window.lib={}));
     </script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <style>
@@ -32,13 +32,9 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
     </div>
-    <div>
-        <div style="box-sizing: border-box; line-height: 0; width: 10rem; height: 0.156rem; background-color: rgb(238, 238, 238); position: relative; background-position: initial initial; background-repeat: initial initial;">
-        </div>
-    </div>
     <div class="tentrance">
         <div class="vertical-view">
-            <div class="horizontal-view">
+            <div class="horizontal-view vertical-fis">
                 <div class="vertical-li">
                   <a href="">
                     <div class="vertical-top iconfont icon-fenlei"></div>
@@ -64,14 +60,109 @@
                   </a>
                 </div>
             </div>
+            <div class="horizontal-view vertical-fis">
+                <div class="vertical-li">
+                  <a href="">
+                    <div class="vertical-top iconfont icon-gouwuche"></div>
+                    <div class="vertical-text">购物车</div>
+                  </a>
+                </div>
+                <div class="vertical-li">
+                  <a href="">
+                    <div class="vertical-top iconfont icon-geren"></div>
+                    <div class="vertical-text">个人中心</div>
+                  </a>
+                </div>
+                <div class="vertical-li">
+                  <a href="">
+                    <div class="vertical-top iconfont icon-shoucang"></div>
+                    <div class="vertical-text">我的收藏</div>
+                  </a>
+                </div>
+                <div class="vertical-li">
+                  <a href="">
+                    <div class="vertical-top iconfont icon-liwu1"></div>
+                    <div class="vertical-text">兑换</div>
+                  </a>
+                </div>
+            </div>
         </div>
+    </div>
+    <div class="toutiao">
+      <div class="component">
+      </div>
+      <div class="compright">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>双11爆款小家电 高端中的净化</a></div>
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>杰克带你了解最新资讯</a></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>双11水果1元起</a></div>
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>全场低至29.9元</a></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i> 899元飞遍全国</a></div>
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>狂发亿元现金券</a></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>满199减100+购超值洗护套装</a></div>
+            <div class="swiper-title"><a href=""><i class="iconfont icon-iconfontyuan"></i>飘柔洗护狂欢5折起</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 间距 -->
+    <div class="spacing"></div>
+    <!-- - -->
+    <div class="Digital">
+      <div class="Digital-top Digital-color">
+        <i></i>
+        <h3>数码馆</h3>
+      </div>
+      <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(239, 239, 239); width: 10rem; height: 1px;"></div>
+      <div class="Digital-bots">
+        <div class="DigitalBotst horizontal-view">
+          <div class="DigitalBotst-img img" style="background-image: url(img/img_06.jpg)"></div>
+          <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 1px; height: 3.962rem;"></div>
+          <div class="DigitalBotst-img DigitalBotst-right">
+            <div class="img" style="background-image: url(img/img_08.jpg)"></div>
+            <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 4.984rem; height: 1px;"></div>
+            <div class="img" style="background-image: url(img/one_03.jpg)"></div>
+          </div>
+        </div>
+        <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 10rem; height: 1px;"></div>
+        <div class="DigitalBotsa horizontal-view">
+          <div class="img" style="background-image: url(img/one_10.jpg)"></div>
+          <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(232, 232, 232); width: 1px; height: 1.981rem;"></div>
+          <div class="img" style="background-image: url(img/one_07.jpg)"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 间距 -->
+    <div class="spacing"></div>
+    <!-- - -->
+    <div class="Digital">
+      <div class="Digital-top Digital-color1">
+        <i></i>
+        <h3>服装馆</h3>
+      </div>
+      <div class=" UIView" style="box-sizing: border-box; line-height: 0; background-color: rgb(239, 239, 239); width: 10rem; height: 1px;"></div>
+      <div class="Digital-fz">
+        <div class="DigitalFz">
+          <div class="">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.jquery.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
         <!-- Initialize Swiper -->
     <script>
     // var swiper = new Swiper('.swiper-container', {
@@ -79,15 +170,25 @@
     //     paginationClickable: true
     // });
 $(function(){
-  var mySwiper = $('.swiper-container').swiper({
-    //Your options here:
-    pagination: '.swiper-pagination',
-    mode:'horizontal',
-    loop: true,
-    paginationClickable :true,
-    slidesPerView: 'auto'
-    //etc..
-  });
+    var mySwiper = $('.swiper-container').swiper({
+      //Your options here:
+      pagination: '.swiper-pagination',
+      mode:'horizontal',
+      loop: true,
+      paginationClickable :true,
+      slidesPerView: 'auto',
+      observer:true,
+      observeParents:true,
+      autoplay : 4000,
+      autoplayDisableOnInteraction: false
+      //etc..
+    });
+    var wySwiper = $('.compright').swiper({
+      direction : 'vertical',
+      observer:true,
+      observeParents:true,
+      autoplay : 4000,
+    })
 })
     </script>
 </body>

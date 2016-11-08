@@ -4,6 +4,7 @@ html {
 body {
   margin: 0;
 }
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
 a {
   text-decoration: none;
   color: #000;
@@ -22,13 +23,26 @@ a:active {
   /* 此属性为 选中设置 */
   text-shadow: none;
 }
+.horizontal-view {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .swiper-container {
     width: 10rem;
     height: 3.125rem;
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
     background: #fff;
 }
 .comWidth {
@@ -41,11 +55,10 @@ a:active {
     background-color: rgb(255, 255, 255);
 
 }
-.horizontal-view {
+.vertical-fis {
     margin-left: 0.359rem;
     width: 9.641rem;
     height: 2.125rem;
-    display: flex;
 }
 .vertical-li {
     text-align: center;
@@ -67,6 +80,20 @@ a:active {
     .icon-dtshangyi {
       background-color: #2cb8f8;
     }
+    .icon-gouwuche {
+      background-color: #d4237a;
+    }
+    .icon-geren {
+      background-color: #13227a;
+      line-height: 1.20rem;
+    }
+    .icon-shoucang {
+      background-color: #0d5ee4;
+      line-height: 1.20rem;
+    }
+    .icon-liwu1 {
+      background-color: #d81e06;
+    }
 }
 
 
@@ -74,9 +101,18 @@ body, button, input, select, textarea {
     font: 12px/1.5 Arial,Verdana,"\5b8b\4f53";
     -ms-overflow-style: scrollbar;
 }
+.spacing {
+box-sizing: border-box;
+line-height: 0;
+width: 10rem;
+height: 0.156rem;
+background-color: rgb(238, 238, 238);
+position: relative;
+background-position: initial initial;
+background-repeat: initial initial;
+}
 
-
-.iconfont {
+.vertical-top {
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 100%;
@@ -93,4 +129,118 @@ body, button, input, select, textarea {
   color: rgb(102, 102, 102);
   width: 2.265rem;
   height: 0.688rem;
+}
+
+
+.toutiao {
+  width: 10rem;
+  padding: 0.09375rem 0px;
+  height: 0.75rem;
+  background-color: #FFF;
+  border-top: 1px solid #eee;
+  .component {
+    display: block;
+    float: left;
+    border-right: 1px solid rgb(232, 232, 232);
+    width: 2.1875rem;
+    height: 100%;
+    box-sizing: border-box;
+    background: url("../img/ypytoutiao.png") center center / 1.61719rem 0.36875rem no-repeat;
+  }
+  .compright {
+    width: 7.5125rem;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    margin-left: 0.3rem;
+    .swiper-title {
+      text-indent: 12px;
+      position: relative;
+      font-size: 12px;
+      width: 98%;
+      height: 0.377rem;
+      line-height: 0.377rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      i {
+        font-size: 0.2rem;
+        color: #e2767e;
+        position: absolute;
+        top: 50%;
+        left: -12px;
+        margin-top: -0.18rem;
+      }
+    }
+  }
+}
+
+.Digital {
+  width: 10rem;
+  background-color: #FFF;
+  .Digital-top {
+    font-size: 14px;
+    position: relative;
+    height: 0.844rem;
+    line-height: 0.844rem;
+    i {
+      height: 1px;
+      width: 4rem;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -2rem;
+      margin-top: -0.5px;
+    }
+    h3 {
+      width: 1.5rem;
+      background-color: #FFF;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+    }
+  }
+  .Digital-color {
+    i {
+      background-color: #75c0ba;
+    }
+    h3 {
+      color: #75c0ba;
+    }
+  }
+  .Digital-color1 {
+    i {
+      background-color: #41b5ff;
+    }
+    h3 {
+      color: #41b5ff;
+    }
+  }
+  .Digital-bots {
+    .DigitalBotst {
+      .DigitalBotst-img {
+        width: 4.984rem;
+        height: 3.962rem;
+
+      }
+      .DigitalBotst-right {
+        .img {
+          height: 1.961rem;
+          width:4.984rem;
+        }
+      }
+    }
+    .DigitalBotsa {
+      .img {
+        width: 4.984rem;
+        height: 1.981rem;
+      }
+    }
+  }
+  .img {
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
