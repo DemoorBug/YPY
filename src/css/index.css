@@ -43,9 +43,18 @@ a:active {
   -ms-flex-direction: row;
   flex-direction: row;
 }
+.img {
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .swiper-container {
   width: 10rem;
-  height: 3.125rem;
+  height: 5.9rem;
+}
+.swiper-container img {
+  width: 100%;
+  height: 100%;
 }
 .swiper-slide {
   background: #fff;
@@ -197,9 +206,12 @@ textarea {
   margin-top: -0.5px;
 }
 .Digital .Digital-top h3 {
+  height: 0.844rem;
+  line-height: 0.844rem;
   width: 1.5rem;
   background-color: #FFF;
   margin: 0 auto;
+  font-size: 0.4rem;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -216,6 +228,18 @@ textarea {
 .Digital .Digital-color1 h3 {
   color: #41b5ff;
 }
+.Digital .Digital-color2 i {
+  background-color: #ff773d;
+}
+.Digital .Digital-color2 h3 {
+  color: #ff773d;
+}
+.Digital .Digital-color3 i {
+  background-color: #c40000;
+}
+.Digital .Digital-color3 h3 {
+  color: #c40000;
+}
 .Digital .Digital-bots .DigitalBotst .DigitalBotst-img {
   width: 4.984rem;
   height: 3.962rem;
@@ -228,10 +252,147 @@ textarea {
   width: 4.984rem;
   height: 1.981rem;
 }
-.Digital .img {
-  background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
+.border {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 0;
+  background-color: #e8e8e8;
+  width: 10rem;
+  height: 1px;
+}
+.Digital-fz .DigitalFz .dgs {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 0;
+  background-color: #e8e8e8;
+  width: 1px;
+  height: 2.3rem;
+}
+.Digital-fz .DigitalFz .DigitalFzOne {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.480rem;
+  height: 2.3rem;
+}
+.Digital-fz .DigitalFz .DigitalFzOne .img {
+  width: 2.480rem;
+  height: 1.759rem;
+}
+.Digital-fz .DigitalFz .DigitalFzOne .DigitalFzOne-ctr {
+  padding: 0 0.2rem;
+  height: 0.541rem;
+  line-height: 0.541rem;
+  font-size: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Digital-fz .DigitalFz .DigitalFzOne .DigitalFzOne-ctr em {
+  font-style: normal;
+  color: #41b5ff;
+}
+.DigitalBotsa-mzg .img {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.478rem;
+  height: 1.981rem;
+}
+.Digital-lunbo {
+  width: 10rem;
+  overflow: hidden;
+  margin-top: 0.1rem;
+}
+.Digital-lunbo .duihuanqu {
+  margin-right: 3px;
+  margin-left: 5px;
+}
+.Digital-lunbo .duihuanqu .img {
+  width: 3.0654rem;
+  height: 3.0654rem;
+  border: 0.05rem solid #eee;
+}
+.Digital-lunbo .duihuanqu-one .img {
+  width: 1.444rem;
+  height: 1.444rem;
+  border: 0.05rem solid #eee;
+}
+.Digital-lunbo .horizontal-view {
+  width: 5rem;
+}
+.footer {
+  background-color: #FFF;
+  padding: 0.3rem 0;
+}
+.footer .horizontal-view div {
+  height: 0.444rem;
+  line-height: 0.444rem;
+  width: 1.925rem;
+  text-align: center;
+}
+.footer .footer-one {
+  padding: 0.3rem 0 0.1rem;
+  width: 10rem;
+  text-align: center;
+  background-color: #FFF;
+}
+.nav {
+  width: 100%;
+  background-color: #a40000;
+  padding: 0.1rem 0;
+  position: fixed;
+  z-index: 999;
+}
+.nav div {
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+}
+.nav .img {
+  width: 33px;
+  height: 33px;
+}
+.nav .duwind {
+  width: 69px;
+}
+.nav .forms {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow: hidden;
+}
+.nav .forms input {
+  line-height: 33px;
+  overflow: hidden;
+  height: 33px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.nav .forms .tij {
+  background: url(../img/fang.png) no-repeat 50% 50%;
+  background-size: 15px;
+  position: absolute;
+  left: 8px;
+  top: 16px;
+  margin-top: -7px;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  color: transparent;
+  padding: 7px 5px;
+}
+.nav .forms .inp {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #FFF;
+  width: 100%;
+  text-indent: 30px;
+}
+.nav .horizontal-view .horizontal-view {
+  width: 66px;
 }
 
 /*# sourceMappingURL=./map/index.css.map */
